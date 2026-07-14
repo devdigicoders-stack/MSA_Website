@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div className="bg-white px-2 pt-3 sm:px-4 lg:px-4">
       {/* 1. Video Hero Section */}
-      <section className="relative h-[82vh] min-h-[550px] flex items-center justify-center overflow-hidden rounded-[2rem] shadow-2xl">
+      <section className="relative h-[92vh] md:h-[82vh] min-h-[680px] md:min-h-[550px] flex items-center justify-center overflow-hidden rounded-[2rem] shadow-2xl">
         {/* Background Video */}
         <video 
           autoPlay 
@@ -59,7 +59,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-[#063a30]/90"></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-32 md:mt-24 lg:mt-20">
           <h1 className="text-[26px] leading-[1.3] sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 uppercase drop-shadow-lg px-2 sm:px-0">
             Empowering Businesses <br className="hidden md:block" />
             Enabling Success In Qatar

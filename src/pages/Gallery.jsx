@@ -19,9 +19,9 @@ const ClientTemplate = ({ client, isModal = false }) => {
       
       {/* Header (Only in Modal) */}
       {isModal && (
-        <div className="flex flex-wrap justify-between items-center gap-4 mb-10 relative z-10">
-          <span className="font-bold text-gray-800 tracking-wide">www.msatrading.qa</span>
-          <img src="/logo.png" alt="MSA Trading Logo" className="h-12 object-contain" />
+        <div className="flex flex-row justify-between items-center gap-2 mb-8 relative z-10">
+          <span className="font-bold text-gray-800 tracking-wide text-xs sm:text-base whitespace-nowrap">www.msatrading.qa</span>
+          <img src="/logo.png" alt="MSA Trading Logo" className="h-8 sm:h-12 object-contain" />
         </div>
       )}
 
@@ -145,15 +145,15 @@ const Gallery = () => {
           
           {/* Outside Close Button */}
           <button 
-            className="absolute top-6 right-6 lg:top-8 lg:right-8 bg-white/10 hover:bg-red-500 hover:border-red-500 text-white rounded-full p-3 z-50 transition-all duration-300 shadow-lg border border-white/20"
+            className="absolute top-3 right-3 md:top-6 md:right-6 lg:top-8 lg:right-8 bg-red-500 text-white rounded-full p-2.5 z-50 transition-all duration-300 shadow-xl border-2 border-white hover:bg-red-600 hover:scale-110"
             onClick={() => setSelectedClient(null)}
           >
-            <X size={28} strokeWidth={2.5} />
+            <X size={24} strokeWidth={3} />
           </button>
 
           {/* Outside Prev Button */}
           <button 
-            className="absolute left-2 lg:left-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white rounded-full p-3 lg:p-4 z-50 transition-all duration-300 shadow-lg border border-white/20"
+            className="hidden md:block absolute left-2 lg:left-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white rounded-full p-3 lg:p-4 z-50 transition-all duration-300 shadow-lg border border-white/20"
             onClick={handlePrev}
           >
             <ChevronLeft size={36} strokeWidth={2.5} />
@@ -161,7 +161,7 @@ const Gallery = () => {
 
           {/* Outside Next Button */}
           <button 
-            className="absolute right-2 lg:right-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white rounded-full p-3 lg:p-4 z-50 transition-all duration-300 shadow-lg border border-white/20"
+            className="hidden md:block absolute right-2 lg:right-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white rounded-full p-3 lg:p-4 z-50 transition-all duration-300 shadow-lg border border-white/20"
             onClick={handleNext}
           >
             <ChevronRight size={36} strokeWidth={2.5} />

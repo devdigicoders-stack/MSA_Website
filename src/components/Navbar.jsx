@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="absolute top-0 w-full z-50 pt-10 px-6 lg:px-8">
+    <div className="absolute top-0 w-full z-[100] pt-10 px-6 lg:px-8">
       <nav className="bg-white rounded-full shadow-lg w-full max-w-[1600px] mx-auto relative z-50">
         <div className="flex justify-between h-[88px] items-center px-4 lg:px-8">
           {/* Left Side: Logo & Menu */}

@@ -53,7 +53,7 @@ const CustomCursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 bg-white rounded-full pointer-events-none z-[9999]"
+      className="hidden md:block fixed top-0 left-0 bg-white rounded-full pointer-events-none z-[9999]"
       style={{ mixBlendMode: 'difference' }}
       variants={variants}
       animate={isHovering ? "hover" : "default"}
