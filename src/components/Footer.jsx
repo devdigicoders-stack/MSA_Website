@@ -54,8 +54,9 @@ const Footer = () => {
             <p className="text-blue-100 text-sm">"Your Trusted Partner in Business Growth and Success!"</p>
           </div>
           <div className="mt-6 md:mt-0 shrink-0">
-            <a href="tel:+97430001016" className="inline-flex items-center gap-2 bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-2.5 rounded-full font-bold transition-colors">
-              Call Now <ArrowRight size={18} />
+            <a href="tel:+97433830816" className="inline-flex items-center gap-2 bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-2.5 rounded-full font-bold transition-colors">
+              <Phone size={18} />
+              +974 33830816
             </a>
           </div>
         </div>
@@ -123,7 +124,6 @@ const Footer = () => {
             <ul className="space-y-4 flex flex-col items-center md:items-start">
               {[
                 'Company Formation',
-                'Visa Services',
                 'Government Liaison & PRO Works',
                 'Document Services',
                 'Corporate & Travel Services',
@@ -147,8 +147,8 @@ const Footer = () => {
                 <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
                   <Phone className="w-5 h-5 text-[#0ea5e9] shrink-0 mt-0.5" />
                   <div className="flex flex-col text-sm font-medium text-gray-600 leading-relaxed">
-                    <span>+974 3000 1016</span>
-                    <span>+974 4437 0221</span>
+                    <a href="tel:+97433830816" className="hover:text-[#0ea5e9] transition-colors">+974 33830816</a>
+                    <a href="tel:+97450399538" className="hover:text-[#0ea5e9] transition-colors">+974 50399538</a>
                   </div>
                 </li>
                 <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
@@ -160,7 +160,8 @@ const Footer = () => {
                 <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
                   <MapPin className="w-5 h-5 text-[#0ea5e9] shrink-0 mt-0.5" />
                   <p className="text-sm font-medium text-gray-600 leading-relaxed">
-                    Al Muthanna Complex, Salwa Road, Near Ramada Signal, First Floor, Office Number 17
+                    Zone- 15, Street- 810<br />
+                    Building - 25, Doha - Jadeeda, MSA QATAR
                   </p>
                 </li>
               </ul>

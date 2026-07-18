@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Award, Clock, HeartHandshake, Building2, Landmark, UserCheck, Headset, ClipboardList, Cog, CheckCircle, ChevronDown, ArrowRight, ChevronLeft, ChevronRight, Phone, ShieldCheck, Layers } from 'lucide-react';
+import { Award, Clock, HeartHandshake, Building2, Landmark, UserCheck, Headset, ClipboardList, Cog, CheckCircle, ChevronDown, ArrowRight, ChevronLeft, ChevronRight, Phone, ShieldCheck, Layers, Download } from 'lucide-react';
 import CountUpModule from 'react-countup';
 import HeroSlider from '../components/HeroSlider';
 
@@ -92,7 +92,7 @@ const Home = () => {
               </div>
             </Link>
             
-            <a href="tel:+97430001016" className="flex items-center justify-between w-40 bg-[#0ea5e9] text-white pl-6 pr-2 py-2 rounded-full font-bold hover:bg-[#0284c7] transition-all duration-300 shadow-lg group">
+            <a href="tel:+97433830816" className="flex items-center justify-between w-40 bg-[#0ea5e9] text-white pl-6 pr-2 py-2 rounded-full font-bold hover:bg-[#0284c7] transition-all duration-300 shadow-lg group">
               <span>Call Now</span>
               <div className="w-8 h-8 rounded-full bg-[#1e3a8a] flex items-center justify-center group-hover:bg-blue-900 transition-colors shrink-0">
                 <ArrowRight size={16} strokeWidth={2.5} />
@@ -207,8 +207,8 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-sm">Call Us now</span>
-                  <a href="tel:+97430001016" className="text-[#0f2c59] font-bold text-lg hover:text-[#0ea5e9] transition-colors">
-                    +974 30001016
+                  <a href="tel:+97433830816" className="text-[#0f2c59] font-bold text-lg hover:text-[#0ea5e9] transition-colors">
+                    +974 33830816
                   </a>
                 </div>
               </div>
@@ -321,6 +321,45 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Company Profile PDF Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
+        <div className="bg-gradient-to-r from-[#0f2c59] to-[#1e3a8a] rounded-[2rem] p-10 md:p-14 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden group">
+          {/* Decorative shapes */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full transform translate-x-1/2 -translate-y-1/2 blur-2xl group-hover:scale-110 transition-transform duration-700"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#0ea5e9]/20 rounded-full transform -translate-x-1/2 translate-y-1/2 blur-2xl group-hover:scale-110 transition-transform duration-700"></div>
+          
+          {/* Text Content */}
+          <div className="relative z-10 text-center md:text-left flex-1">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+              Download Our Company Profile
+            </h3>
+            <p className="text-blue-100/90 text-lg max-w-2xl mb-10 leading-relaxed">
+              Get a detailed overview of our services, mission, and how MSA Trading & Services can help your business thrive in Qatar. Explore our success stories and comprehensive business solutions.
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <a 
+                href="/aaa108b6-016e-4774-823a-e41539c9d600.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-8 py-4 rounded-full font-bold flex items-center gap-3 transition-all duration-300 shadow-[0_10px_30px_rgba(14,165,233,0.3)] hover:shadow-[0_15px_40px_rgba(14,165,233,0.5)] hover:-translate-y-1 group/btn text-lg inline-flex"
+              >
+                <Download size={24} className="group-hover/btn:animate-bounce" />
+                Download PDF
+              </a>
+            </div>
+          </div>
+          
+          {/* Images Collage */}
+          <div className="relative z-10 shrink-0 w-full md:w-[45%] flex justify-center items-center h-64 sm:h-80 lg:h-96 mt-10 md:mt-0 perspective-1000">
+            {/* Image 3 (Back) */}
+            <img src="/3.png" alt="Profile Page 3" className="absolute w-36 sm:w-48 lg:w-56 h-auto rounded-xl shadow-2xl transform rotate-12 translate-x-16 translate-y-4 group-hover:rotate-[15deg] group-hover:translate-x-24 transition-all duration-700 border-4 border-white/20" />
+            {/* Image 2 (Middle) */}
+            <img src="/2.png" alt="Profile Page 2" className="absolute w-36 sm:w-48 lg:w-56 h-auto rounded-xl shadow-2xl transform -rotate-6 -translate-x-12 translate-y-2 group-hover:-rotate-[10deg] group-hover:-translate-x-20 transition-all duration-700 border-4 border-white/40 z-10" />
+            {/* Image 1 (Front) */}
+            <img src="/1.png" alt="Profile Page 1" className="absolute w-40 sm:w-56 lg:w-64 h-auto rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform z-20 group-hover:scale-110 transition-all duration-700 border-4 border-white" />
+          </div>
+        </div>
+      </section>
       {/* Service Deep-Dives Main Heading */}
       <section className="bg-gray-50 pt-20 pb-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">

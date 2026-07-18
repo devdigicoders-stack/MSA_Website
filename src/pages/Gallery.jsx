@@ -50,15 +50,15 @@ const ClientTemplate = ({ client, isModal = false }) => {
                <Phone size={18}/>
              </div>
              <div>
-               <p>+974 3000 1016</p>
-               <p>+974 4437 0221</p>
+               <p>+974 33830816</p>
+               <p>+974 50399538</p>
              </div>
           </div>
           <div className="flex items-center gap-3">
              <div className="w-10 h-10 rounded-full bg-[#1e3a8a] flex items-center justify-center text-white shrink-0">
                <MapPin size={18}/>
              </div>
-             <p className="text-gray-600">Al Muthanna Complex<br/>Salwa Road, Doha, Qatar</p>
+             <p className="text-gray-600">Zone- 15, Street- 810<br/>Building - 25, Doha - Jadeeda, MSA QATAR</p>
           </div>
           <div className="flex flex-col gap-3">
              <span className="font-bold text-lg">msatrading.qa</span>

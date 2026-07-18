@@ -81,7 +81,9 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Location</h3>
                 <p className="text-gray-500 leading-relaxed text-[15px]">
-                  Al Muthanna Complex, Salwa Road, Near Ramada Signal, First Floor, Office Number 17
+                  Zone- 15, Street- 810<br />
+                  Building - 25, Doha - Jadeeda<br />
+                  MSA QATAR
                 </p>
               </div>
             </div>
@@ -93,9 +95,9 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Call Us</h3>
-                <p className="text-gray-500 leading-relaxed text-[15px]">
-                  +974 30001016<br />
-                  +974 44370221
+                <p className="text-gray-500 leading-relaxed text-[15px] flex flex-col gap-1">
+                  <a href="tel:+97433830816" className="hover:text-[#0ea5e9] transition-colors">+974 33830816</a>
+                  <a href="tel:+97450399538" className="hover:text-[#0ea5e9] transition-colors">+974 50399538</a>
                 </p>
               </div>
             </div>
@@ -134,13 +136,13 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="w-full h-[450px] lg:h-[550px] rounded-3xl overflow-hidden shadow-lg border border-gray-100 relative">
           <iframe 
-            src="https://maps.google.com/maps?q=Al%20Muthanna%20Complex,%20Salwa%20Road,%20Doha&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3607.815177162829!2d51.53271387538439!3d25.276802077659895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE2JzM2LjUiTiA1McKwMzInMDcuMCJF!5e0!3m2!1sen!2sin!4v1784380572350!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen="" 
             loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </div>

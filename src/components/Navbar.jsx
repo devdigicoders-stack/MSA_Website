@@ -78,7 +78,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-[13px] text-gray-500 font-medium leading-none mb-1">Call Us Now</span>
-                <span className="text-[16px] font-extrabold text-[#1e3a8a] leading-none tracking-wide">+974 3000 1016</span>
+                <span className="text-[16px] font-extrabold text-[#1e3a8a] leading-none tracking-wide">+974 33830816</span>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-gray-500 font-medium mb-1">Call Us Now</span>
-                <span className="text-lg font-extrabold text-[#1e3a8a] tracking-wide">+974 3000 1016</span>
+                <span className="text-lg font-extrabold text-[#1e3a8a] tracking-wide">+974 33830816</span>
               </div>
             </div>
             
