@@ -28,7 +28,7 @@ const Typewriter = ({ text, delay = 70, pause = 2000 }) => {
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, text, delay, pause]);
 
-  return <span>{currentText}<span className="animate-pulse border-r-4 border-[#009b4d] ml-1 h-8 inline-block align-middle relative -top-1"></span></span>;
+  return <span>{currentText}<span className="animate-pulse border-r-4 border-[#0ea5e9] ml-1 h-8 inline-block align-middle relative -top-1"></span></span>;
 };
 
 const About = () => {
@@ -57,7 +57,7 @@ const About = () => {
 
             {/* Circular Badge */}
             <div className="absolute bottom-10 left-[15%] z-20 w-36 h-36 bg-white rounded-full p-2 shadow-2xl flex items-center justify-center">
-              <div className="w-full h-full rounded-full border-2 border-dashed border-[#009b4d] flex items-center justify-center bg-gray-50 relative animate-[spin_20s_linear_infinite]">
+              <div className="w-full h-full rounded-full border-2 border-dashed border-[#0ea5e9] flex items-center justify-center bg-gray-50 relative animate-[spin_20s_linear_infinite]">
                 <div className="absolute inset-0 flex flex-col items-center justify-center animate-[spin_20s_linear_infinite_reverse]">
                   <img src="/logo.png" alt="MSA" className="w-12 h-12 object-contain" />
                   <span className="text-[10px] font-bold text-[#0f2c59] mt-1 text-center leading-tight">MSA TRADING<br/>& SERVICES</span>
@@ -68,8 +68,8 @@ const About = () => {
 
           {/* Right Side: Content */}
           <div>
-            <div className="flex items-center gap-3 text-[#009b4d] font-bold tracking-[0.2em] text-sm mb-6 uppercase">
-              <span className="w-2 h-2 bg-[#009b4d] rounded-full"></span> ABOUT US
+            <div className="flex items-center gap-3 text-[#0ea5e9] font-bold tracking-[0.2em] text-sm mb-6 uppercase">
+              <span className="w-2 h-2 bg-[#0ea5e9] rounded-full"></span> ABOUT US
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#0f2c59] mb-6 leading-tight">
               Your Trusted Business & Government Services Partner in Qatar
@@ -89,9 +89,9 @@ const About = () => {
             {/* Buttons & Contact */}
             <div className="mt-10 flex flex-wrap xl:flex-nowrap items-center gap-4 xl:gap-6 w-full">
               <a href="/about" className="bg-[#0f2c59] hover:bg-[#0a1e3f] text-white px-5 xl:px-6 py-3 rounded-full font-bold flex items-center gap-2 xl:gap-3 transition-colors shadow-lg group text-sm whitespace-nowrap">
-                More About <ArrowRight size={18} className="bg-[#009b4d] text-white rounded-full p-1 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                More About <ArrowRight size={18} className="bg-[#0ea5e9] text-white rounded-full p-1 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="/contact" className="bg-[#009b4d] hover:bg-[#007a3c] text-white px-5 xl:px-6 py-3 rounded-full font-bold flex items-center gap-2 xl:gap-3 transition-colors shadow-lg group text-sm whitespace-nowrap">
+              <a href="/contact" className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-5 xl:px-6 py-3 rounded-full font-bold flex items-center gap-2 xl:gap-3 transition-colors shadow-lg group text-sm whitespace-nowrap">
                 Free Consultation <ArrowRight size={18} className="bg-[#0f2c59] text-white rounded-full p-1 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
               <div className="flex items-center gap-3 xl:gap-4 ml-0 xl:ml-2 whitespace-nowrap">
@@ -115,7 +115,7 @@ const About = () => {
           <p className="text-xl md:text-2xl font-medium text-[#0f2c59] leading-relaxed italic">
             "We focus on building long-term relationships based on trust, transparency, and reliability. Our mission is to simplify administrative processes, eliminate delays, and provide professional support that enables our clients to focus on what matters most—growing their business and achieving their goals."
           </p>
-          <div className="w-24 h-1 bg-[#009b4d] mx-auto mt-10 rounded-full"></div>
+          <div className="w-24 h-1 bg-[#0ea5e9] mx-auto mt-10 rounded-full"></div>
         </div>
       </section>
 
@@ -129,17 +129,17 @@ const About = () => {
           
           <div className="grid sm:grid-cols-3 gap-8">
             <div className="bg-white/5 p-10 rounded-[2rem] border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-              <Users className="w-14 h-14 text-[#009b4d] mx-auto mb-6" />
+              <Users className="w-14 h-14 text-[#0ea5e9] mx-auto mb-6" />
               <h3 className="text-xl font-bold mb-4">Customer-First Approach</h3>
               <p className="text-blue-100/80 leading-relaxed">Personalized guidance and practical solutions tailored to save your valuable time while reducing unnecessary complexity.</p>
             </div>
             <div className="bg-white/5 p-10 rounded-[2rem] border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-              <Briefcase className="w-14 h-14 text-[#009b4d] mx-auto mb-6" />
+              <Briefcase className="w-14 h-14 text-[#0ea5e9] mx-auto mb-6" />
               <h3 className="text-xl font-bold mb-4">Industry Expertise</h3>
               <p className="text-blue-100/80 leading-relaxed">Extensive knowledge of Qatar's legal framework and dynamic business environment to help you navigate every stage.</p>
             </div>
             <div className="bg-white/5 p-10 rounded-[2rem] border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-              <Award className="w-14 h-14 text-[#009b4d] mx-auto mb-6" />
+              <Award className="w-14 h-14 text-[#0ea5e9] mx-auto mb-6" />
               <h3 className="text-xl font-bold mb-4">Commitment to Excellence</h3>
               <p className="text-blue-100/80 leading-relaxed">Accurate, professional handling of every process in compliance with the latest regulations, ensuring success.</p>
             </div>
@@ -157,7 +157,7 @@ const About = () => {
             <div className="absolute left-0 bottom-0 w-full h-full bg-[#0f2c59] transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
             
             <div className="relative z-10">
-              <Target className="w-14 h-14 text-[#009b4d] mb-8 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
+              <Target className="w-14 h-14 text-[#0ea5e9] mb-8 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
               <h3 className="text-2xl font-black tracking-wide text-[#0f2c59] mb-6 group-hover:text-white transition-colors duration-500">OUR MISSION</h3>
               <p className="text-gray-600 leading-loose text-[15px] group-hover:text-blue-50 transition-colors duration-500">
                 To become Qatar's most trusted business services provider by delivering reliable, transparent, and end-to-end solutions for company formation, PRO services, government approvals, visa processing, documentation, and corporate support. We are committed to simplifying complex procedures, ensuring regulatory compliance, and enabling our clients to focus on growing their businesses with confidence.
@@ -168,12 +168,12 @@ const About = () => {
           {/* Vision Card */}
           <div className="bg-white p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-2xl transition-all duration-500 border border-gray-100 relative overflow-hidden group hover:-translate-y-2 cursor-pointer">
             {/* Sliding Background Animation */}
-            <div className="absolute left-0 bottom-0 w-full h-full bg-[#009b4d] transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+            <div className="absolute left-0 bottom-0 w-full h-full bg-[#0ea5e9] transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
             
             <div className="relative z-10">
               <Eye className="w-14 h-14 text-[#0f2c59] mb-8 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
-              <h3 className="text-2xl font-black tracking-wide text-[#009b4d] mb-6 group-hover:text-white transition-colors duration-500">OUR VISION</h3>
-              <p className="text-gray-600 leading-loose text-[15px] group-hover:text-green-50 transition-colors duration-500">
+              <h3 className="text-2xl font-black tracking-wide text-[#0ea5e9] mb-6 group-hover:text-white transition-colors duration-500">OUR VISION</h3>
+              <p className="text-gray-600 leading-loose text-[15px] group-hover:text-sky-50 transition-colors duration-500">
                 To be the leading business solutions partner in Qatar, recognized for excellence, innovation, and customer satisfaction. We strive to empower entrepreneurs, investors, corporations, and individuals through professional services that create long-term value, foster sustainable business growth, and contribute to Qatar's evolving business ecosystem.
               </p>
             </div>
@@ -189,13 +189,13 @@ const About = () => {
           {/* Header Area */}
           <div className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-12">
             <div className="lg:w-1/2">
-              <div className="flex items-center gap-3 text-[#009b4d] font-bold tracking-[0.2em] text-sm mb-6 uppercase">
-                <span className="w-2 h-2 bg-[#009b4d] rounded-full"></span> OUR PROCESS
+              <div className="flex items-center gap-3 text-[#0ea5e9] font-bold tracking-[0.2em] text-sm mb-6 uppercase">
+                <span className="w-2 h-2 bg-[#0ea5e9] rounded-full"></span> OUR PROCESS
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
-                Our Process: <span className="text-[#009b4d]">Simple.</span>
+                Our Process: <span className="text-[#0ea5e9]">Simple.</span>
               </h2>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#009b4d] leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#0ea5e9] leading-tight">
                 Transparent. Efficient
               </h2>
             </div>
@@ -277,15 +277,15 @@ const About = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div>
-            <div className="flex items-center gap-3 text-[#009b4d] font-bold tracking-[0.2em] text-sm mb-4 uppercase">
-              <span className="w-2 h-2 bg-[#009b4d] rounded-full"></span> OUR TEAM
+            <div className="flex items-center gap-3 text-[#0ea5e9] font-bold tracking-[0.2em] text-sm mb-4 uppercase">
+              <span className="w-2 h-2 bg-[#0ea5e9] rounded-full"></span> OUR TEAM
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0f2c59] leading-tight max-w-2xl min-h-[96px] md:min-h-[60px]">
               <Typewriter text="Meet the Experts Behind MSA Trading" delay={70} />
             </h2>
           </div>
           <a href="/contact" className="bg-[#0f2c59] hover:bg-[#0a1e3f] text-white px-8 py-3.5 rounded-full font-bold flex items-center gap-3 transition-colors shadow-lg group">
-            Contact Us <ArrowRight size={20} className="bg-[#009b4d] text-white rounded-full p-1 w-7 h-7 group-hover:translate-x-1 transition-transform" />
+            Contact Us <ArrowRight size={20} className="bg-[#0ea5e9] text-white rounded-full p-1 w-7 h-7 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
 
@@ -298,7 +298,7 @@ const About = () => {
             { name: "Mr. Afsal TA Kareem", role: "Operation Manager", img: "/team4.png" },
             { name: "Ms. Aishwariya Suresh", role: "Business Consultant", img: "/team5.png" }
           ].map((member, idx) => (
-            <div key={idx} className="relative rounded-sm overflow-hidden group h-[450px] shadow-lg border-b-4 border-[#0f2c59] hover:border-[#009b4d] transition-colors">
+            <div key={idx} className="relative rounded-sm overflow-hidden group h-[450px] shadow-lg border-b-4 border-[#0f2c59] hover:border-[#0ea5e9] transition-colors">
               <img 
                 src={member.img} 
                 alt={member.name} 

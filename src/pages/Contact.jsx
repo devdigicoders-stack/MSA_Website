@@ -10,7 +10,7 @@ const Contact = () => {
       title: 'Success!',
       text: 'Your message has been sent successfully. Our team will contact you soon.',
       icon: 'success',
-      confirmButtonColor: '#009b4d',
+      confirmButtonColor: '#0ea5e9',
     });
     e.target.reset();
   };
@@ -26,13 +26,13 @@ const Contact = () => {
           {/* Left Side: Text and Form */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#009b4d]"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#0ea5e9]"></div>
               <span className="text-[#1e3a8a] font-bold text-sm tracking-widest uppercase">Contact Us</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-semibold mb-3 leading-tight tracking-tight">
               <span className="text-[#1e3a8a]">Your Growth-Driven<br /></span>
-              <span className="text-[#009b4d]">Business Consulting<br />Partner</span>
+              <span className="text-[#0ea5e9]">Business Consulting<br />Partner</span>
             </h2>
             
             <p className="text-gray-500 mb-10 leading-relaxed text-[15px]">
@@ -64,7 +64,7 @@ const Contact = () => {
               
               <button type="submit" className="inline-flex items-center gap-4 bg-[#1e3a8a] text-white pl-6 pr-2 py-2 rounded-full font-bold text-[15px] hover:bg-blue-900 transition-colors shadow-md group mt-2">
                 <span>Send Message</span>
-                <div className="w-9 h-9 rounded-full bg-[#009b4d] flex items-center justify-center text-white group-hover:bg-[#007f3d] transition-colors shrink-0">
+                <div className="w-9 h-9 rounded-full bg-[#0ea5e9] flex items-center justify-center text-white group-hover:bg-[#0284c7] transition-colors shrink-0">
                   <ArrowRight size={18} strokeWidth={2.5} />
                 </div>
               </button>
@@ -75,11 +75,11 @@ const Contact = () => {
           <div className="grid sm:grid-cols-2 gap-6 h-fit mt-8 lg:mt-0">
             {/* Location Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group cursor-pointer">
-              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#009b4d] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#0ea5e9] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
                 <MapPin size={28} strokeWidth={2} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#009b4d] transition-colors duration-300">Location</h3>
+                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Location</h3>
                 <p className="text-gray-500 leading-relaxed text-[15px]">
                   Al Muthanna Complex, Salwa Road, Near Ramada Signal, First Floor, Office Number 17
                 </p>
@@ -88,11 +88,11 @@ const Contact = () => {
 
             {/* Call Us Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group cursor-pointer">
-              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#009b4d] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#0ea5e9] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
                 <Phone size={28} strokeWidth={2} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#009b4d] transition-colors duration-300">Call Us</h3>
+                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Call Us</h3>
                 <p className="text-gray-500 leading-relaxed text-[15px]">
                   +974 30001016<br />
                   +974 44370221
@@ -102,11 +102,11 @@ const Contact = () => {
 
             {/* Email Us Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group cursor-pointer">
-              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#009b4d] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#0ea5e9] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
                 <Mail size={28} strokeWidth={2} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#009b4d] transition-colors duration-300">Email Us</h3>
+                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Email Us</h3>
                 <p className="text-gray-500 leading-relaxed text-[15px]">
                   info@msatrading.qa
                 </p>
@@ -115,11 +115,11 @@ const Contact = () => {
 
             {/* Live Chat Card */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group cursor-pointer">
-              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#009b4d] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 rounded-full bg-[#1e3a8a] group-hover:bg-[#0ea5e9] group-hover:scale-110 transition-all duration-300 ease-out flex items-center justify-center text-white mb-8">
                 <MessageCircle size={28} strokeWidth={2} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#009b4d] transition-colors duration-300">Live Chat</h3>
+                <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Live Chat</h3>
                 <p className="text-gray-500 leading-relaxed text-[15px]">
                   Connect with our team instantly for any queries about.
                 </p>

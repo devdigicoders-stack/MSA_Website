@@ -33,7 +33,7 @@ const Typewriter = ({ text, delay = 70, pause = 2000 }) => {
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, text, delay, pause]);
 
-  return <span>{currentText}<span className="animate-pulse border-r-4 border-[#009b4d] ml-1 h-8 inline-block align-middle relative -top-1"></span></span>;
+  return <span>{currentText}<span className="animate-pulse border-r-4 border-[#0ea5e9] ml-1 h-8 inline-block align-middle relative -top-1"></span></span>;
 };
 
 const Home = () => {
@@ -56,7 +56,7 @@ const Home = () => {
         </video>
         
         {/* Dark Teal Overlay */}
-        <div className="absolute inset-0 bg-[#063a30]/90"></div>
+        <div className="absolute inset-0 bg-[#0c4a6e]/90"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-32 md:mt-24 lg:mt-20">
@@ -71,15 +71,15 @@ const Home = () => {
           
           <div className="flex flex-wrap items-center justify-center gap-6 mb-12 text-white font-semibold">
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-[#009b4d]" />
+              <CheckCircle className="w-5 h-5 text-[#0ea5e9]" />
               <span>Qatar Based</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-[#009b4d]" />
+              <CheckCircle className="w-5 h-5 text-[#0ea5e9]" />
               <span>Global Clients</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-[#009b4d]" />
+              <CheckCircle className="w-5 h-5 text-[#0ea5e9]" />
               <span>Business Made Easy</span>
             </div>
           </div>
@@ -87,12 +87,12 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/contact" className="flex items-center justify-between w-48 bg-[#1e3a8a] text-white pl-6 pr-2 py-2 rounded-full font-bold hover:bg-blue-900 transition-all duration-300 shadow-lg group">
               <span>Connect Now</span>
-              <div className="w-8 h-8 rounded-full bg-[#009b4d] flex items-center justify-center group-hover:bg-[#007f3d] transition-colors shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#0ea5e9] flex items-center justify-center group-hover:bg-[#0284c7] transition-colors shrink-0">
                 <ArrowRight size={16} strokeWidth={2.5} />
               </div>
             </Link>
             
-            <a href="tel:+97430001016" className="flex items-center justify-between w-40 bg-[#009b4d] text-white pl-6 pr-2 py-2 rounded-full font-bold hover:bg-[#007f3d] transition-all duration-300 shadow-lg group">
+            <a href="tel:+97430001016" className="flex items-center justify-between w-40 bg-[#0ea5e9] text-white pl-6 pr-2 py-2 rounded-full font-bold hover:bg-[#0284c7] transition-all duration-300 shadow-lg group">
               <span>Call Now</span>
               <div className="w-8 h-8 rounded-full bg-[#1e3a8a] flex items-center justify-center group-hover:bg-blue-900 transition-colors shrink-0">
                 <ArrowRight size={16} strokeWidth={2.5} />
@@ -133,7 +133,7 @@ const Home = () => {
             </div>
 
             {/* Rotating Badge */}
-            <div className="absolute bottom-10 left-0 z-30 bg-[#009b4d] w-36 h-36 rounded-full flex items-center justify-center shadow-xl border-[6px] border-white">
+            <div className="absolute bottom-10 left-0 z-30 bg-[#0ea5e9] w-36 h-36 rounded-full flex items-center justify-center shadow-xl border-[6px] border-white">
               {/* Rotating Text Container */}
               <div className="absolute w-full h-full animate-[spin_10s_linear_infinite]">
                 <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -159,12 +159,12 @@ const Home = () => {
             className="flex flex-col"
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#009b4d]"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#0ea5e9]"></div>
               <span className="text-[#0f2c59] font-bold tracking-[0.15em] text-sm uppercase">About Us</span>
             </div>
             
             <h2 className="text-4xl md:text-[2.75rem] font-bold text-[#0f2c59] leading-[1.1] mb-6">
-              Reliable Business Management Consultancy to <span className="text-[#009b4d]">Drive Your Success</span>
+              Reliable Business Management Consultancy to <span className="text-[#0ea5e9]">Drive Your Success</span>
             </h2>
             
             <p className="text-gray-500 text-[17px] leading-relaxed mb-10">
@@ -173,11 +173,11 @@ const Home = () => {
 
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <div className="bg-[#0f2c59] text-white rounded-[1.25rem] p-5 flex items-center gap-4 hover:-translate-y-1 transition-transform shadow-md">
-                <ShieldCheck className="w-8 h-8 text-[#009b4d]" strokeWidth={1.5} />
+                <ShieldCheck className="w-8 h-8 text-[#0ea5e9]" strokeWidth={1.5} />
                 <span className="font-semibold text-lg leading-snug">100% Ownership<br/>Guaranteed</span>
               </div>
               <div className="bg-[#0f2c59] text-white rounded-[1.25rem] p-5 flex items-center gap-4 hover:-translate-y-1 transition-transform shadow-md">
-                <Layers className="w-8 h-8 text-[#009b4d]" strokeWidth={1.5} />
+                <Layers className="w-8 h-8 text-[#0ea5e9]" strokeWidth={1.5} />
                 <span className="font-semibold text-lg leading-snug">Hassle-Free<br/>Business Setup</span>
               </div>
             </div>
@@ -189,12 +189,12 @@ const Home = () => {
             <div className="flex flex-wrap items-center gap-6">
               <Link to="/about" className="group flex items-center gap-3 bg-[#0f2c59] text-white px-6 py-3.5 rounded-full font-semibold hover:bg-opacity-90 transition-all shadow-md">
                 More About
-                <div className="bg-[#009b4d] rounded-full p-1 group-hover:translate-x-1 transition-transform">
+                <div className="bg-[#0ea5e9] rounded-full p-1 group-hover:translate-x-1 transition-transform">
                   <ArrowRight className="w-4 h-4 text-white" />
                 </div>
               </Link>
               
-              <Link to="/contact" className="group flex items-center gap-3 bg-[#009b4d] text-white px-6 py-3.5 rounded-full font-semibold hover:bg-opacity-90 transition-all shadow-md">
+              <Link to="/contact" className="group flex items-center gap-3 bg-[#0ea5e9] text-white px-6 py-3.5 rounded-full font-semibold hover:bg-opacity-90 transition-all shadow-md">
                 Free Consultation
                 <div className="bg-[#0f2c59] rounded-full p-1 group-hover:translate-x-1 transition-transform">
                   <ArrowRight className="w-4 h-4 text-white" />
@@ -207,7 +207,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-sm">Call Us now</span>
-                  <a href="tel:+97430001016" className="text-[#0f2c59] font-bold text-lg hover:text-[#009b4d] transition-colors">
+                  <a href="tel:+97430001016" className="text-[#0f2c59] font-bold text-lg hover:text-[#0ea5e9] transition-colors">
                     +974 30001016
                   </a>
                 </div>
@@ -234,7 +234,7 @@ const Home = () => {
           {/* Right: Content */}
           <div className="flex flex-col">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#0f2c59] leading-[1.15] tracking-tight min-h-[80px] md:min-h-[110px]">
-              100% Foreign Ownership <span className="text-[#009b4d] inline-block"><Typewriter text="Company Registration" /></span>
+              100% Foreign Ownership <span className="text-[#0ea5e9] inline-block"><Typewriter text="Company Registration" /></span>
             </h2>
             <p className="text-gray-500 text-[17px] leading-relaxed mb-8">
               Start your business with total control and zero compromise. Our business setup services specialise in company formation with 100% foreign ownership, helping you navigate all legal and regulatory frameworks seamlessly.
@@ -243,25 +243,25 @@ const Home = () => {
             <div className="h-[1px] w-full bg-gray-200 mb-8"></div>
             
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
-              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#009b4d] transition-all duration-300 min-h-[160px]">
+              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#0ea5e9] transition-all duration-300 min-h-[160px]">
                 <span className="text-3xl font-extrabold mb-4">
                   <CountUp end={5} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />+
                 </span>
                 <span className="text-[15px] font-medium leading-snug text-gray-100">Years<br/>Of<br/>Experience</span>
               </div>
-              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#009b4d] transition-all duration-300 min-h-[160px]">
+              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#0ea5e9] transition-all duration-300 min-h-[160px]">
                 <span className="text-3xl font-extrabold mb-4">
                   <CountUp end={100} duration={3} enableScrollSpy={true} scrollSpyOnce={true} />+
                 </span>
                 <span className="text-[15px] font-medium leading-snug text-gray-100">Happy<br/>Customers</span>
               </div>
-              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#009b4d] transition-all duration-300 min-h-[160px]">
+              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#0ea5e9] transition-all duration-300 min-h-[160px]">
                 <span className="text-3xl font-extrabold mb-4">
                   <CountUp end={10} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} suffix="K" />
                 </span>
                 <span className="text-[15px] font-medium leading-snug text-gray-100">Work<br/>Completed</span>
               </div>
-              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#009b4d] transition-all duration-300 min-h-[160px]">
+              <div className="bg-[#0f2c59] text-white rounded-3xl p-6 flex flex-col justify-start shadow-md hover:-translate-y-1 hover:bg-[#0ea5e9] transition-all duration-300 min-h-[160px]">
                 <span className="text-3xl font-extrabold mb-4">
                   <CountUp end={365} duration={3} enableScrollSpy={true} scrollSpyOnce={true} />+
                 </span>
@@ -363,8 +363,8 @@ const Home = () => {
             <div className="space-y-2.5 mb-10">
               {['100% Foreign Ownership Registration', 'Qatari Sponsorship Arrangement', 'Corporate Bank Account Opening', 'Office Space Solutions'].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 bg-white p-2.5 rounded-lg shadow-sm border-l-4 border-primary hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-green-100 p-1.5 rounded-full">
-                    <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  <div className="bg-sky-100 p-1.5 rounded-full">
+                    <svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                   </div>
                   <span className="text-gray-700 text-sm font-medium">{item}</span>
                 </div>
@@ -391,8 +391,8 @@ const Home = () => {
             <div className="space-y-2.5 mb-10">
               {['All Kinds of PRO Works', 'Metrash 2 & Hukoomi Services', 'Document Attestation (All Certificates)', 'Visa Services & Passport Renewal'].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 bg-white p-2.5 rounded-lg shadow-sm border-l-4 border-primary hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-green-100 p-1.5 rounded-full">
-                    <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  <div className="bg-sky-100 p-1.5 rounded-full">
+                    <svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                   </div>
                   <span className="text-gray-700 text-sm font-medium">{item}</span>
                 </div>
@@ -497,14 +497,14 @@ const Home = () => {
           {/* Header Area */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <div>
-              <div className="flex items-center gap-3 text-[#009b4d] font-bold tracking-[0.2em] text-sm mb-4 uppercase">
-                <span className="w-2 h-2 bg-[#009b4d] rounded-full"></span> FAQ'S
+              <div className="flex items-center gap-3 text-[#0ea5e9] font-bold tracking-[0.2em] text-sm mb-4 uppercase">
+                <span className="w-2 h-2 bg-[#0ea5e9] rounded-full"></span> FAQ'S
               </div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight max-w-2xl min-h-[96px] md:min-h-[60px]">
                 <Typewriter text="Frequently asked questions about us" />
               </h2>
             </div>
-            <Link to="/contact" className="bg-[#009b4d] hover:bg-[#007a3c] text-white px-8 py-3.5 rounded-full font-bold flex items-center gap-3 transition-colors shadow-lg group">
+            <Link to="/contact" className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-8 py-3.5 rounded-full font-bold flex items-center gap-3 transition-colors shadow-lg group">
               Contact Us <ArrowRight size={20} className="bg-white text-[#0f2c59] rounded-full p-1 w-7 h-7 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -569,7 +569,7 @@ const Home = () => {
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   >
                     <h4 className={`font-bold text-[17px] pr-4 transition-colors ${openFaq === i ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{faq.q}</h4>
-                    <div className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 shadow-sm ${openFaq === i ? 'bg-[#009b4d] text-white rotate-45' : 'bg-white text-[#0f2c59]'}`}>
+                    <div className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 shadow-sm ${openFaq === i ? 'bg-[#0ea5e9] text-white rotate-45' : 'bg-white text-[#0f2c59]'}`}>
                       <span className="text-xl font-light leading-none block mb-0.5">+</span>
                     </div>
                   </button>
@@ -635,7 +635,7 @@ const Home = () => {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold">
-            <span className="text-[#0f2c59]">Our Valued Clients</span> <span className="text-[#009b4d]">Partnerships!</span>
+            <span className="text-[#0f2c59]">Our Valued Clients</span> <span className="text-[#0ea5e9]">Partnerships!</span>
           </h2>
         </div>
         

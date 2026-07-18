@@ -110,7 +110,7 @@ const Services = () => {
                   {/* Hover Arrow Button */}
                   <div className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-all duration-500">
                     <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-2xl transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out delay-100">
-                      <ArrowRight className="text-[#009b4d] w-6 h-6 stroke-[2.5]" />
+                      <ArrowRight className="text-[#0ea5e9] w-6 h-6 stroke-[2.5]" />
                     </div>
                   </div>
                 </div>
@@ -168,14 +168,14 @@ const Services = () => {
               <div className="flex flex-wrap items-center gap-6 mt-auto">
                 <Link 
                   to="/contact"
-                  className="bg-[#009b4d] hover:bg-[#007f3f] text-white px-6 py-3 rounded-full font-bold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-[#009b4d]/50 hover:-translate-y-1"
+                  className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-3 rounded-full font-bold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-[#0ea5e9]/50 hover:-translate-y-1"
                 >
                   Free Consultation <ArrowRight size={18} />
                 </Link>
                 
                 <Link 
                   to="/contact"
-                  className="text-white hover:text-[#009b4d] font-semibold flex items-center gap-2 transition-colors group"
+                  className="text-white hover:text-[#0ea5e9] font-semibold flex items-center gap-2 transition-colors group"
                 >
                   See More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>

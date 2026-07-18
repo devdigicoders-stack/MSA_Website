@@ -37,7 +37,7 @@ const ClientTemplate = ({ client, isModal = false }) => {
 
       {/* Button */}
       <div className="flex justify-center mt-8 relative z-10">
-         <div className="bg-gradient-to-r from-[#1e3a8a] to-[#009b4d] text-white px-10 py-3.5 text-lg rounded-full font-bold shadow-lg hover:shadow-xl transition-shadow cursor-default">
+         <div className="bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white px-10 py-3.5 text-lg rounded-full font-bold shadow-lg hover:shadow-xl transition-shadow cursor-default">
            Thank you for trusting MSA Trading
          </div>
       </div>

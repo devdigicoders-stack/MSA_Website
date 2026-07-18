@@ -11,7 +11,7 @@ const BlogDetail = () => {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Blog Post Not Found</h2>
-        <Link to="/blogs" className="text-[#009b4d] hover:underline flex items-center gap-2">
+        <Link to="/blogs" className="text-[#0ea5e9] hover:underline flex items-center gap-2">
           <ArrowLeft size={16} /> Back to Blogs
         </Link>
       </div>
@@ -26,7 +26,7 @@ const BlogDetail = () => {
       />
 
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <Link to="/blogs" className="inline-flex items-center gap-2 text-[#1e3a8a] font-medium hover:text-[#009b4d] transition-colors mb-8">
+        <Link to="/blogs" className="inline-flex items-center gap-2 text-[#1e3a8a] font-medium hover:text-[#0ea5e9] transition-colors mb-8">
           <ArrowLeft size={18} /> Back to all articles
         </Link>
 
@@ -46,11 +46,11 @@ const BlogDetail = () => {
                 {blog.date}
               </span>
               <span className="flex items-center gap-2">
-                <User size={16} className="text-[#009b4d]" />
+                <User size={16} className="text-[#0ea5e9]" />
                 By {blog.author}
               </span>
               <span className="flex items-center gap-2">
-                <Clock size={16} className="text-[#009b4d]" />
+                <Clock size={16} className="text-[#0ea5e9]" />
                 5 min read
               </span>
             </div>
@@ -69,7 +69,7 @@ const BlogDetail = () => {
               <p className="mb-6">
                 Whether you are a startup looking to establish your presence or an established enterprise seeking to expand, understanding these dynamics is essential. Our team at MSA Trading provides expert guidance tailored to your specific needs, ensuring that you remain compliant with local regulations while maximizing your operational efficiency.
               </p>
-              <div className="bg-green-50 border-l-4 border-[#009b4d] p-6 rounded-r-xl mt-8">
+              <div className="bg-sky-50 border-l-4 border-[#0ea5e9] p-6 rounded-r-xl mt-8">
                 <h3 className="text-[#1e3a8a] font-bold text-lg mb-2">Ready to take the next step?</h3>
                 <p className="text-gray-700 mb-0">Contact MSA Trading today for a free consultation on how we can help your business thrive in Qatar.</p>
               </div>

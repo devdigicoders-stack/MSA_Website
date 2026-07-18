@@ -88,7 +88,7 @@ const Navbar = () => {
               className="flex items-center gap-4 bg-[#1e3a8a] text-white pl-6 pr-2 py-2 rounded-full font-bold text-[15px] hover:bg-blue-900 transition-colors shadow-md group"
             >
               <span>Free Consultation</span>
-              <div className="w-9 h-9 rounded-full bg-[#009b4d] flex items-center justify-center text-white group-hover:bg-[#007f3d] transition-colors shrink-0">
+              <div className="w-9 h-9 rounded-full bg-[#0ea5e9] flex items-center justify-center text-white group-hover:bg-[#0284c7] transition-colors shrink-0">
                 <ArrowRight size={18} strokeWidth={2.5} />
               </div>
             </Link>
@@ -160,7 +160,7 @@ const Navbar = () => {
               className="flex items-center justify-between bg-[#1e3a8a] text-white pl-8 pr-3 py-3 rounded-full font-bold text-lg hover:bg-blue-900 transition-colors shadow-lg group w-full"
             >
               <span>Free Consultation</span>
-              <div className="w-11 h-11 rounded-full bg-[#009b4d] flex items-center justify-center text-white group-hover:bg-[#007f3d] transition-colors shrink-0">
+              <div className="w-11 h-11 rounded-full bg-[#0ea5e9] flex items-center justify-center text-white group-hover:bg-[#0284c7] transition-colors shrink-0">
                 <ArrowRight size={20} strokeWidth={2.5} />
               </div>
             </Link>

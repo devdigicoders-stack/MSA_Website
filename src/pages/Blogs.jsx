@@ -22,14 +22,14 @@ const Blogs = () => {
               <div className="h-56 w-full overflow-hidden relative">
                 <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm font-semibold text-[#1e3a8a] flex items-center gap-2">
-                  <Calendar size={14} className="text-[#009b4d]" />
+                  <Calendar size={14} className="text-[#0ea5e9]" />
                   {post.date}
                 </div>
               </div>
               <div className="p-8 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-[#0f2c59] mb-3 group-hover:text-[#009b4d] transition-colors line-clamp-2">{post.title}</h3>
+                <h3 className="text-xl font-bold text-[#0f2c59] mb-3 group-hover:text-[#0ea5e9] transition-colors line-clamp-2">{post.title}</h3>
                 <p className="text-gray-600 mb-6 flex-1 line-clamp-3 leading-relaxed">{post.excerpt}</p>
-                <div className="flex items-center text-[#1e3a8a] font-bold group-hover:text-[#009b4d] transition-colors mt-auto">
+                <div className="flex items-center text-[#1e3a8a] font-bold group-hover:text-[#0ea5e9] transition-colors mt-auto">
                   Read Article <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
