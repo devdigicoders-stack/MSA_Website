@@ -109,8 +109,10 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#1e3a8a] mb-3 group-hover:text-[#0ea5e9] transition-colors duration-300">Email Us</h3>
-                <p className="text-gray-500 leading-relaxed text-[15px]">
-                  info@msatrading.qa
+                <p className="text-gray-500 leading-relaxed text-[15px] flex flex-col gap-1">
+                  <a href="mailto:pro@msatradingqa.com" className="hover:text-[#0ea5e9] transition-colors">pro@msatradingqa.com</a>
+                  <a href="mailto:msatyping@gmail.com" className="hover:text-[#0ea5e9] transition-colors">msatyping@gmail.com</a>
+                  <a href="mailto:md003seraj@gmail.com" className="hover:text-[#0ea5e9] transition-colors">md003seraj@gmail.com</a>
                 </p>
               </div>
             </div>
