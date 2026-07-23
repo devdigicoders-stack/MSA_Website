@@ -6,46 +6,40 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
-  const images = [
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=800&auto=format&fit=crop",
-    "/corporate_bank.png",
-    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop"
-  ];
-
   const generateDescription = (title) => {
     return `Starting or managing aspects of "${title}" in Qatar can feel overwhelming, but with MSA Trading and Services, the process becomes simple and efficient. We provide expert guidance through every step, from choosing the right legal structure to completing documentation and obtaining necessary approvals. Our team ensures that your request is processed smoothly, saving you valuable time and effort. With years of experience, we handle the complexities so you can focus on growing your business. Whether you're an entrepreneur or a large organization, our reliable support makes the process seamless, secure, and fully compliant with local laws and regulations.`;
   };
 
   const serviceList = [
-    { title: "Company Formation", img: images[0] },
-    { title: "100% Foreign Ownership Company Registration", img: images[1] },
-    { title: "Qatari Sponsorship", img: images[2] },
-    { title: "Document Clearance (Typing Application Forms)", img: images[3] },
-    { title: "Corporate Bank Account Opening", img: images[4] },
-    { title: "Salary Transfer of Company Staff (WPS)", img: images[5] },
-    { title: "Municipality (Baladiya) Works", img: images[0] },
-    { title: "Embassy Services", img: images[2] },
-    { title: "Translation Service (All Kinds of Documents)", img: images[3] },
-    { title: "Hukoomi Services", img: images[0] },
-    { title: "All Kinds of PRO Works", img: images[1] },
-    { title: "Job Application (Online)", img: images[2] },
-    { title: "Office Space", img: images[3] },
-    { title: "Document Attestation (All Kinds of Certificates)", img: images[4] },
-    { title: "School Admission and Registration", img: images[5] },
-    { title: "Passport Renewal (India, Bangladesh, Nepal)", img: images[6] },
-    { title: "Metrash 2 Services", img: images[0] },
-    { title: "Electricity Registration and Cancellation", img: images[1] },
-    { title: "All Kind of Approvals for Business Formation", img: images[2] },
-    { title: "Zakat Application", img: images[3] },
-    { title: "CV and Cover Letter Writing", img: images[4] },
-    { title: "Marriage Certificate and Attestation & Qazi", img: images[5] },
-    { title: "Birth Certificate Service (Born in Qatar)", img: images[0] },
-    { title: "Travel, Vehicle Insurance and Renew Istimara", img: images[1] }
-  ].map(s => ({ ...s, description: generateDescription(s.title) }));
+    { title: "Company Formation", filename: "Company Formation.png" },
+    { title: "100% Foreign Ownership Company Registration", filename: "100 Percent Foreign Ownership Company Registration.png" },
+    { title: "Qatari Sponsorship", filename: "Qatari Sponsorship.png" },
+    { title: "Document Clearance (Typing Application Forms)", filename: "Document Clearance (Typing Application Forms).png" },
+    { title: "Corporate Bank Account Opening", filename: "Corporate Bank Account Opening.png" },
+    { title: "Salary Transfer of Company Staff (WPS)", filename: "Salary Transfer of Company Staff (WPS).png" },
+    { title: "Municipality (Baladiya) Works", filename: "Municipality (Baladiya) Works.png" },
+    { title: "Embassy Services", filename: "Embassy Services.png" },
+    { title: "Translation Service (All Kinds of Documents)", filename: "Translation Service (All Kinds of Documents).png" },
+    { title: "Hukoomi Services", filename: "Hukoomi Services.png" },
+    { title: "All Kinds of PRO Works", filename: "All Kinds of PRO Works.png" },
+    { title: "Job Application (Online)", filename: "Job Application (Online).png" },
+    { title: "Office Space", filename: "Office Space.png" },
+    { title: "Document Attestation (All Kinds of Certificates)", filename: "Document Attestation (All Kinds of Certificates).png" },
+    { title: "School Admission and Registration", filename: "School Admission and Registration.png" },
+    { title: "Passport Renewal (India, Bangladesh, Nepal)", filename: "Passport Renewal (India, Bangladesh, Nepal.png" },
+    { title: "Metrash 2 Services", filename: "Metrash 2 Services.png" },
+    { title: "Electricity Registration and Cancellation", filename: "Electricity Registration and Cancellatio.png" },
+    { title: "All Kind of Approvals for Business Formation", filename: "All Kind of Approvals for Business Formation.png" },
+    { title: "Zakat Application", filename: "Zakat Application.png" },
+    { title: "CV and Cover Letter Writing", filename: "CV and Cover Letter Writing.png" },
+    { title: "Marriage Certificate and Attestation & Qazi", filename: "Marriage Certificate and Attestation & Qazi.png" },
+    { title: "Birth Certificate Service (Born in Qatar)", filename: "Birth Certificate Service (Born in Qatar).png" },
+    { title: "Travel, Vehicle Insurance and Renew Istimara", filename: "Travel, Vehicle Insurance and Renew Istimara.png" }
+  ].map(s => ({ 
+    ...s, 
+    img: `/service-images/${s.filename}`,
+    description: generateDescription(s.title) 
+  }));
 
   // Prevent background scrolling when modal is open
   useEffect(() => {
@@ -95,11 +89,11 @@ const Services = () => {
                 </div>
 
                 {/* Image Section (Bottom) */}
-                <div className="h-48 sm:h-52 lg:h-[220px] w-full overflow-hidden relative shrink-0 shadow-sm border border-white/10">
+                <div className="h-48 sm:h-52 lg:h-[220px] w-full overflow-hidden relative shrink-0 shadow-sm border border-white/10 bg-white">
                   <img 
                     src={service.img} 
                     alt={service.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" 
+                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-in-out p-2" 
                   />
                   
                   {/* Subtle overlay */}
@@ -145,10 +139,8 @@ const Services = () => {
                 <img 
                   src={selectedService.img} 
                   alt={selectedService.title} 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-contain bg-white rounded-l-md md:rounded-none" 
                 />
-                {/* Fade overlay on image for blending */}
-                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0f2c59]/40 to-transparent"></div>
               </div>
             </div>
 

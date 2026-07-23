@@ -281,7 +281,7 @@ const About = () => {
           {/* Text Content */}
           <div className="relative z-10 text-center md:text-left flex-1">
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Download Our Company Profile
+              Our Official Documents
             </h3>
             <p className="text-blue-100/90 text-lg max-w-2xl mb-10 leading-relaxed">
               Get a detailed overview of our services, mission, and how MSA Trading & Services can help your business thrive in Qatar. Explore our success stories and comprehensive business solutions.
