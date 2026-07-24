@@ -283,7 +283,7 @@ const About = () => {
           <img
             src="/Hero Image.png"
             alt="MSA Trading Hero"
-            className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
           />
         </div>
       </section>

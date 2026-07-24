@@ -332,7 +332,7 @@ const Home = () => {
           <img
             src="/Hero Image.png"
             alt="MSA Trading Hero"
-            className="w-full h-[300px] sm:h-[400px] lg:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
           />
         </div>
       </section>
