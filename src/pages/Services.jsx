@@ -11,34 +11,33 @@ const Services = () => {
   };
 
   const serviceList = [
-    { title: "Company Formation", filename: "Company Formation.png" },
-    { title: "100% Foreign Ownership Company Registration", filename: "100 Percent Foreign Ownership Company Registration.png" },
-    { title: "Qatari Sponsorship", filename: "Qatari Sponsorship.png" },
-    { title: "Document Clearance (Typing Application Forms)", filename: "Document Clearance (Typing Application Forms).png" },
-    { title: "Corporate Bank Account Opening", filename: "Corporate Bank Account Opening.png" },
-    { title: "Salary Transfer of Company Staff (WPS)", filename: "Salary Transfer of Company Staff (WPS).png" },
-    { title: "Municipality (Baladiya) Works", filename: "Municipality (Baladiya) Works.png" },
-    { title: "Embassy Services", filename: "Embassy Services.png" },
-    { title: "Translation Service (All Kinds of Documents)", filename: "Translation Service (All Kinds of Documents).png" },
-    { title: "Hukoomi Services", filename: "Hukoomi Services.png" },
-    { title: "All Kinds of PRO Works", filename: "All Kinds of PRO Works.png" },
-    { title: "Job Application (Online)", filename: "Job Application (Online).png" },
-    { title: "Office Space", filename: "Office Space.png" },
-    { title: "Document Attestation (All Kinds of Certificates)", filename: "Document Attestation (All Kinds of Certificates).png" },
-    { title: "School Admission and Registration", filename: "School Admission and Registration.png" },
-    { title: "Passport Renewal (India, Bangladesh, Nepal)", filename: "Passport Renewal (India, Bangladesh, Nepal.png" },
-    { title: "Metrash 2 Services", filename: "Metrash 2 Services.png" },
-    { title: "Electricity Registration and Cancellation", filename: "Electricity Registration and Cancellatio.png" },
-    { title: "All Kind of Approvals for Business Formation", filename: "All Kind of Approvals for Business Formation.png" },
-    { title: "Zakat Application", filename: "Zakat Application.png" },
-    { title: "CV and Cover Letter Writing", filename: "CV and Cover Letter Writing.png" },
-    { title: "Marriage Certificate and Attestation & Qazi", filename: "Marriage Certificate and Attestation & Qazi.png" },
-    { title: "Birth Certificate Service (Born in Qatar)", filename: "Birth Certificate Service (Born in Qatar).png" },
-    { title: "Travel, Vehicle Insurance and Renew Istimara", filename: "Travel, Vehicle Insurance and Renew Istimara.png" }
-  ].map(s => ({ 
-    ...s, 
-    img: `/service-images/${s.filename}`,
-    description: generateDescription(s.title) 
+    { title: "Company Formation",                                img: "/service-images/Company Formation.png" },
+    { title: "100% Foreign Ownership Company Registration",      img: "/service-images/100 Foreign Ownership.png" },
+    { title: "Qatari Sponsorship",                               img: "/service-images/Qatari Sponsorship.png" },
+    { title: "Document Clearance (Typing Application Forms)",    img: "/service-images/Document Clearance (Typing App Form).png" },
+    { title: "Corporate Bank Account Opening",                   img: "/service-images/Corporate Bank Account.png" },
+    { title: "Salary Transfer of Company Staff (WPS)",           img: "/service-images/Salary Transfer of Company (WPS).png" },
+    { title: "Municipality (Baladiya) Works",                    img: "/service-images/Municipality (Baladiya) Works.png" },
+    { title: "Embassy Services",                                 img: "/service-images/Embassy Services.png" },
+    { title: "Translation Service (All Kinds of Documents)",     img: "/service-images/Translation Service.png" },
+    { title: "Hukoomi Services",                                 img: "/service-images/Hukoomi Services.png" },
+    { title: "All Kinds of PRO Works",                           img: "/service-images/All Kind of PRO Works.png" },
+    { title: "Job Application (Online)",                         img: "/service-images/Job Application Online.png" },
+    { title: "Office Space",                                     img: "/service-images/Office Space.png" },
+    { title: "Document Attestation (All Kinds of Certificates)", img: "/service-images/Document Attestation.png" },
+    { title: "School Admission and Registration",                img: "/service-images/School Admission & Registration.png" },
+    { title: "Passport Renewal (India, Bangladesh, Nepal)",      img: "/service-images/Passport Renewal.png" },
+    { title: "Metrash 2 Services",                               img: "/service-images/Metrash 2 Services.png" },
+    { title: "Electricity Registration and Cancellation",        img: "/service-images/Electricity Registration.png" },
+    { title: "All Kind of Approvals for Business Formation",     img: "/service-images/All Kind of Approvals for Business.png" },
+    { title: "Zakat Application",                                img: "/service-images/Zakat Application.png" },
+    { title: "CV and Cover Letter Writing",                      img: "/service-images/CV and Cover letter.png" },
+    { title: "Marriage Certificate and Attestation & Qazi",      img: "/service-images/Marriage Certificate and Attestation.png" },
+    { title: "Birth Certificate Service (Born in Qatar)",        img: "/service-images/Birth Certificate Service.png" },
+    { title: "Travel, Vehicle Insurance and Renew Istimara",     img: "/service-images/Travel, Vehicle Insurance.png" },
+  ].map(s => ({
+    ...s,
+    description: generateDescription(s.title)
   }));
 
   // Prevent background scrolling when modal is open
